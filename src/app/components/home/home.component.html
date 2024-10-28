@@ -11,22 +11,24 @@
     </div>
   </div>
   <div class="app-product-showcase">
-    <span class="title">PRODUCT CATOGRIES</span>
+    <span class="title">PRODUCT CATEGORIZES</span>
     <div class="product-list">
-      <mat-card class="mat-card">
-        <img mat-card-image
-          src="https://tiimg.tistatic.com/fp/1/007/981/corrosion-resistant-sturdy-design-high-quality-easy-installing-stainless-steel-window-grill-014.jpg">
-        <mat-card-content>
-        </mat-card-content>
-      </mat-card>
-      <mat-card class="mat-card">
-      </mat-card>
-      <mat-card class="mat-card">
-      </mat-card>
-      <mat-card class="mat-card">
-      </mat-card>
-      <!-- <mat-card class="mat-card">
-      </mat-card> -->
+      <app-card [data]="cardGrill"></app-card>
+      <app-card [data]="cardGate"></app-card>
+      <app-card [data]="cardSafetyDoor"></app-card>
+      <app-card [data]="cardCoolingSheet"></app-card>
+      <app-card [data]="cardLadder"></app-card>
+    </div>
+  </div>
+  <div class="app-service-showcase">
+    <span class="title">SERVICE CATEGORIZES</span>
+    <div class="service-list">
+      <app-card [data]="cardGrillService"></app-card>
+      <app-card [data]="cardGateService"></app-card>
+      <app-card [data]="cardSafetyDoorService"></app-card>
+      <app-card [data]="cardCoolingSheetService"></app-card>
+      <app-card [data]="cardLadderService"></app-card>
     </div>
   </div>
 </div>
+
