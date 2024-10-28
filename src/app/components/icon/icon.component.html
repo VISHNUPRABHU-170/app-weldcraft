@@ -1,0 +1,5 @@
+@if(data.withBadge) {
+  <mat-icon [matBadge]="data.badgeValue" aria-hidden="false">{{data.name}}</mat-icon>
+} @else {
+  <mat-icon>{{data.name}}</mat-icon>
+}

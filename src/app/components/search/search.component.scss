@@ -1,0 +1,43 @@
+.search {
+  display: flex;
+
+  input {
+    width: 200px;
+    font-size: 18px;
+    color: #42517D;
+    padding: 8px;
+    background-color: #FDFDFE;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1.5px solid #42517D;
+    outline: none;
+
+    &:hover {
+      border: 2px solid #17254E;
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 40px;
+    background-color: #2B3A67;
+    cursor: pointer;
+
+    .mat-icon {
+      font-size: 28px;
+      height: 28px;
+      width: 28px;
+      color: #ffffff;
+    }
+
+    &:hover {
+      background-color: #17254E;
+    }
+  }
+}
