@@ -1,0 +1,12 @@
+<div class="app-dialog">
+  <h2 mat-dialog-title>Login</h2>
+  <mat-dialog-content>
+    <app-input [data]="nameInputConfig" [formGroup]="data" [formControl]="'name'"></app-input>
+    <app-input [data]="emailInputConfig" [formGroup]="data" [formControl]="'email'"></app-input>
+    <app-input [data]="passwordInputConfig" [formGroup]="data" [formControl]="'password'"></app-input>
+    <app-input [data]="confirmPasswordInputConfig" [formGroup]="data" [formControl]="'confirmPassword'"></app-input>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button [disabled]="data.valid" [mat-dialog-close]="data.value">Submit</button>
+  </mat-dialog-actions>
+</div>

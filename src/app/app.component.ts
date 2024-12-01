@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './modules/header/components/view/view.component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +11,10 @@ import { HeaderComponent } from './components/header/header.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'frontend';
+
+  constructor (private http: HttpClient) { }
+  
+  ngOnInit(): void {
+    this.http.get('http://localhost:5000/home').subscribe((data: any) => {console.log(data)});
+  }
 }

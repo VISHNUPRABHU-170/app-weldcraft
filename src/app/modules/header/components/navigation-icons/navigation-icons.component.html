@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    <li><app-icon [data]="favoriteIcon"></app-icon></li>
+    <li><app-icon [data]="cartIcon"></app-icon></li>
+    <li><app-icon [data]="userIcon" [matMenuTriggerFor]="menu"></app-icon></li>
+  </ul>
+</nav>
+
+<mat-menu #menu="matMenu" class="mat-menu">
+  @if(!logged) {
+    <button mat-menu-item (click)="openDialog()">Login<app-icon [data]="signIn"></app-icon></button>
+  } @else {
+    <button mat-menu-item (click)="openDialog()">Logout<app-icon [data]="signOut"></app-icon></button>
+  }
+</mat-menu>

@@ -1,0 +1,9 @@
+.app-dialog {
+  padding: 20px 50px;
+
+  .mat-mdc-dialog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

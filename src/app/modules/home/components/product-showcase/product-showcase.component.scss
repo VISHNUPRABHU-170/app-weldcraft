@@ -1,0 +1,21 @@
+.app-product-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0px 40px;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 500;
+    color: #2B3A67;
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 50px;
+  }
+}

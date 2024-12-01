@@ -1,0 +1,26 @@
+.app-search {
+  display: flex;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 40px;
+    background-color: #2B3A67;
+    cursor: pointer;
+
+    .mat-icon {
+      font-size: 28px;
+      height: 28px;
+      width: 28px;
+      color: #ffffff;
+    }
+
+    &:hover {
+      background-color: #17254E;
+    }
+  }
+}

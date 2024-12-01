@@ -1,0 +1,16 @@
+.input-search {
+  width: 200px;
+  font-size: 18px;
+  color: #42517D;
+  padding: 8px;
+  background-color: #FDFDFE;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1.5px solid #42517D;
+  outline: none;
+
+  &:hover {
+    border: 2px solid #17254E;
+  }
+}
